@@ -22,7 +22,7 @@ class HadethDetails extends StatelessWidget {
             ),
           ),
           body: Card(
-            elevation: 14,
+            elevation: 16,
             margin: EdgeInsets.all(18),
             shape: OutlineInputBorder(
                 borderRadius: BorderRadius.circular(25),
