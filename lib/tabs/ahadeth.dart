@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:islami_c9_mon/hadeth_details.dart';
 import 'package:islami_c9_mon/hadeth_model.dart';
 import 'package:islami_c9_mon/my_theme_data.dart';
@@ -23,7 +24,7 @@ class _AhadethTabState extends State<AhadethTab> {
           color: MyThemeData.primary,
         ),
         Text(
-          "Ahadeth",
+          AppLocalizations.of(context)!.ahadeth,
         ),
         Divider(
           thickness: 3,

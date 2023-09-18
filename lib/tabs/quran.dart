@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:islami_c9_mon/my_theme_data.dart';
 import 'package:islami_c9_mon/sura_details.dart';
 import 'package:islami_c9_mon/sura_model.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 class QuranTab extends StatelessWidget {
   List<String> suraNames = [
@@ -127,12 +128,12 @@ class QuranTab extends StatelessWidget {
       child: Column(
         children: [
           Image.asset("assets/images/top_bg.png"),
-          Divider(
+          const Divider(
             thickness: 2,
             color: MyThemeData.primary,
           ),
           Text(
-            "Sura Names",
+            AppLocalizations.of(context)!.suraName,
             style: Theme.of(context).textTheme.bodyMedium,
           ),
           Divider(
